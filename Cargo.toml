@@ -1,0 +1,23 @@
+[package]
+name = "adfvgx"
+version = "0.1.0"
+authors = ["thomas"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# html scraper for wikipedia frequencies
+scraper = "0.12.0"
+
+# to convert unicode special chars to their base alphabetic value
+unidecode = "0.3.0"
+
+reqwest = { version = "0.10", features = ["blocking"] }
+tokio = { version = "0.2", features = ["full"] }
+
+# permutation library for brute force
+permutohedron = "0.2.4"
+
+[profile.dev]
+opt-level = 3
