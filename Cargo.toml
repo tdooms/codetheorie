@@ -8,13 +8,13 @@ edition = "2018"
 
 [dependencies]
 # html scraper for wikipedia frequencies
-scraper = "0.12.0"
+scraper = "0.13"
 
 # to convert unicode special chars to their base alphabetic value
 unidecode = "0.3.0"
 
-reqwest = { version = "0.10", features = ["blocking"] }
-tokio = { version = "0.2", features = ["full"] }
+reqwest = { version = "0.11", features = ["blocking"] }
+tokio = { version = "1.20", features = ["full"] }
 
 # permutation library for brute force
 permutohedron = "0.2.4"
